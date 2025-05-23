@@ -8,11 +8,17 @@
         src: url("fonts/YoungSerif-Regular.ttf");
 }
 
+@font-face {
+    font-family: "Mahalini";
+        src: url("fonts/Mahalini.ttf");
+}
+
 body{
-    background-color: #b7b7e2;
-    background-image: linear-gradient(to left, #c4c9ee,#b7b7e2);
+    background-color: #c4c4e3;
+    background-image: linear-gradient(to left, #d2d5ee,#dcded);
     margin: 20px;
 }
+
 
 h1{
     color: #82fdff;
@@ -20,35 +26,57 @@ h1{
     padding-bottom: 0px;
     padding-left: 40px;
     padding-right: 30px;
+    margin-bottom: 0px;
     font-size: 120px;
+    border-radius: 200px;
    }
 
 h2{
-    color: rgb(255, 107, 14);
-    font-family: Romantic;
-    padding-bottom: 0px;
-    padding-left: 40px;
-    padding-right: 30px;
-    font-size: 100px;
-    text-align: left;
+    /* color: rgb(255, 107, 14); */
+    color:#311444;
+    font-family: Mahalini;
+    font-size: 75px;
+    text-align: left !important;
+    background-color: #d3d3ef;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border: #a695d9 9px double;
+    border-right: none;
+    border-left: none;
+    border-bottom: #a695d9 9px double;
+
    }
 
-h3{
-    color: #de118b;
+/* h3{
+    color: #311444;
     font-family: Romantic;
-    padding-bottom: 0px;
-    padding-left: 40px;
-    padding-right: 30px;
-    font-size: 120px;
-    text-align: center;
-   }
+    font-size: 85px;
+    text-align: left;
+    background-color: #d3d3ef;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-bottom: 15px;
+    border: #a695d9 3px solid;
+    border-right: none;
+    border-left: none;
+    border-bottom: #a695d9 9px double;
+   } */
 
 h4 {
     font-family: Young;
     color:#142544;
-    font-size: 20px; 
-    text-align: left;
+    font-size: 20px;
 }
+
+h5{
+  color: #de118b;
+  font-family: Romantic;
+  padding-left: 20px;
+  font-size: 55px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+ }
    
 p{
     font-family: Young;
@@ -56,8 +84,24 @@ p{
     font-size: 20px; 
     text-align: left;
     width: 60%;
-    max-width: 60%;
+    max-width: 700px;
+    min-width: 400px;
     padding-left: 15px;
+    /* background-color: #ababe7; */
+    /* if you want a background colour in just the about section you need to create a class */
+}
+
+.contactinfo{
+    font-family: Young;
+    max-width: 300px;
+    color:#142544;
+    font-size: 22px; 
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: #cacaed;
+    border: #a695d9 5px dashed;
+    border-radius: 15px;
 }
 
 .home{
@@ -66,32 +110,59 @@ p{
     color:#142544;
     font-size: 20px; 
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
+    margin: 10px;
+    margin-bottom: 10px;
     line-height: 15px;
-    background-color: #82fdff;
+    background-color: rgb(132, 95, 211);
+    border-radius: 10px;
+    text-align: left;
+    
 }
 
 .home:hover{
     background-color:#142544;
     color: #82fdff;
-  }
+}
 
+/* Key is for the menu (Home About Sound Light) (*/
 .key{
     font-family: Young;
-    color:#142544;
-    font-size: 25px; 
+    /* color:#142544;
+    background-color: #b7b7e2;
+    border: #142544 3px solid; */
+    color: #b7b7e2;
+    border: #142544 3px solid;
+    background-color: #142544;
+    border-radius: 200px;
+    font-size: 17px; 
     text-decoration: none;
+    padding: 15px;
+    margin-right: 30px;
+    position: sticky;
 }
 
 .key:hover{
-    color: #712291;
-  }
+  color:#142544;
+  background-color: #b7b7e2;
+  border: #142544 3px solid;
+  border-radius: 200px;
+}
+  
+  .key2{
+    font-family: Romantic;
+    color:#d3d3ef;
+    font-size: 45px; 
+    text-decoration: none;
+    padding: 20px;
+    margin-right: 20px;
+}
 
 .rectangle {
-    height: 75px;
+    height: 100px;
     max-width: 2000px;
-    background-color:#82fdff;
-    padding: 20px;
+    background-color: #5f5581;
+    padding-top: 17px;
   }
 
 .tracking-in-expand-fwd{-webkit-animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both;animation:tracking-in-expand-fwd .8s cubic-bezier(.215,.61,.355,1.000) both}
@@ -101,7 +172,6 @@ p{
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
 img {vertical-align: top;}
-
 
 /* GRID */
 .item1 { grid-area: pro1; }
@@ -123,9 +193,9 @@ img {vertical-align: top;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 800px;
   position: relative;
-  margin: auto;
+  text-align: left;
 }
 
 /* input[type=text], select {
@@ -171,36 +241,39 @@ img {vertical-align: top;}
 }
 
 /* Sound Design explanation text */
-.text {
-  font-size: 20px;
-  padding-left: 30px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
+.text{
   font-family: Young;
+  font-size: 20px;
+  text-align: left;
+  margin: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 90%;
+  background-color: #d3d3ef;
+  border: #a695d9 5px dashed;
 }
 
 /* The dots/bullets/indicators */
 .dot {
+  font-family: Young;
   cursor: pointer;
-  height: 90px;
-  width: 90px;
-  padding-top: 22px;
-  padding-left: 22px;
-  margin-left: 35px;
+  padding: 12px;
+  margin-left: 20px;
   margin-bottom: 30px;
   background-color: #bbb;
-  border-radius: 50%;
+  border-radius: 90px;
   display: inline-block;
   transition: background-color 0.4s ease;
-  font-size: 30px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .active, .dot:hover {
-  background-color:#82fdff;
+  background-color: #5f5581;
+  color:#b7b7e2;
 }
 
 /* Fading animation */
@@ -218,3 +291,66 @@ img {vertical-align: top;}
 /* @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 } */
+
+.box {
+  color: #311444;
+}
+
+.box {
+  transition: color 0.6s;
+}
+
+.box:hover {
+  color: #de118b;
+}
+
+/* Explosion on aisle 9 (italics in the about section) */
+.explosion {
+  color: #142544;
+}
+
+.explosion:hover {
+  animation: explode 0.4s infinite;
+}
+
+@keyframes explode {
+ 0%,100% {
+   color: #142544;
+ }
+
+ 2% {
+  color: #656255;
+ }
+
+ 10% {
+  color: #817235;
+ }
+
+ 20% {
+   color:yellow;
+ }
+
+ 35% {
+  color:#ffcc00;
+ }
+
+ 50% {
+   color:orange;
+ }
+
+ 60% {
+  color: #ff6f00;
+ }
+
+ 75% {
+   color:rgb(255, 0, 128);
+ }
+
+ 85% {
+  color: #656255;
+ }
+
+}
+
+
+

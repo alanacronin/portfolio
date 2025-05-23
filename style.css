@@ -1,12 +1,16 @@
 
+
+/* CSS for home page and fonts ONLY */
+
+
 /* Alana Cronin */
 h1{
  color: #82fdff;
  font-family: Romantic;
- padding-left: 20px;
- padding-right: 35px;
+ padding-left: 30px;
+ padding-right: 20px;
  font-size: 110px;
- margin-bottom: 12px;
+ margin-bottom: 50px;
 }
 
 /* Fonts, if you want to add more, add in the format below */
@@ -18,6 +22,11 @@ h1{
 @font-face {
     font-family: "Young";
         src: url("fonts/YoungSerif-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Starborn";
+    src: url("fonts/Starborn.otf");
 }
 
 * {box-sizing: border-box;}
@@ -39,12 +48,14 @@ body {
 .header a {
   float: left;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   text-decoration: none;
   font-family: Young;
   font-size: 25px; 
-  line-height: 55px;
-  border-radius: 200px;
+  line-height: 70px;
+  border-radius: 220px;
+  margin-left: 5px;
+  margin-bottom: 20px;
 }
 
 /* Colours of buttons on home page */
